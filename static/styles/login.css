@@ -1,0 +1,95 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.form{
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	padding:30px 50px 30px 50px;
+	border-radius: 50px ;
+	background-color: transparent;
+}
+.name{
+	margin-bottom: 20px;
+	height: 30px;
+	width: 250px;
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid white;
+	color:#141ad8 ;
+}
+.button{
+	background: lightgreen;
+	color:black;
+	width: 250px;
+	height: 45px;
+
+}
+h2{
+	color: #035231;
+	text-align: center;
+	margin-bottom: 50px;
+}
+p{
+	color: #222a8e;
+	text-align: center;
+}
+a{
+	color:pink;
+	border: .5px solid #2b0808;
+	background-color:#2b0808;
+}
+
+.button:hover{
+	color: pink;
+	background-color: black;
+}
+
+a:hover{
+	color:gray;
+	background-color: white;
+}
+h2{
+	color: lightgreen;
+	text-align: center;
+	margin-bottom: 50px;
+}
+p{
+	color: #222a8e;
+	text-align: center;
+}
+a{
+	color:pink;
+	border: .5px solid #2b0808;
+	background-color:#2b0808;
+}
+
+.button:hover{
+	color: pink;
+	background-color: black;
+}
+
+.name input{
+	border:none;
+	outline: none;
+	background:none;
+	font-size: 18px;
+	float: left;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgreen;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: lightgreen;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: lightgreen;
+}

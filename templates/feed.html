@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback</title>
+	<style type="text/css">
+		body{
+			background-color:lightblue;
+			margin: 0px;
+			padding: 0px;
+
+		}
+		h2{
+			margin-left: 80px;
+			color: darkblue;
+		}
+		.top{
+			margin: 0px;
+			margin-left:50px;
+			margin-top: 30px;
+			border: 5px solid darkblue;
+			width:290px;
+			padding: 0px 10px 0px 10px;
+
+		}
+		.form{
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			position: absolute;
+			color: blue;
+		}
+		h1{
+			font-family: sans-serif;
+			color: darkred;
+			background-color:lightgreen;
+		}
+		.form p{
+			padding: 10px;
+		}
+		#button{
+			margin-left: 150px;
+			color:yellow;
+			background-color: darkblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<p><h1>Hand Loom Saree</h1></p>
+	</div>
+	
+	<form method="post" action="{% url 'contact' %}" class="form">
+		{% csrf_token %}
+		<h2>Form</h2>
+		{{form.as_p}}
+		<input type="submit" name="save" id="button">
+	</form>
+</body>
+</html>
+
